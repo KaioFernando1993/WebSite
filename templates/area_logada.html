@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    {% block titulo %} {% endblock %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+    <nav class="navigation">
+        <a href="/">Inicio</a>
+        <a href="/sobre">Sobre</a>
+      
+        <a href="/logout">Sair  <a>
+    </nav>
+    <main>
+        {% block conteudo %} {% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-note">Site criado para estudo</div>
+          <div class="social-icons">
+            <a href="https://github.com/KaioFernando1993" target="_blank"><img src="/static/github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/kaio-fernando-ferreira-alves-6701b2230/" target="_blank"><img src="/static/linkedin.png" alt="LinkedIn"></a>
+          </div>
+        </div>
+      </footer>
+</body>
+
+</html>

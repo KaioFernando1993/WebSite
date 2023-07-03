@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Rhuma Sinera';
+    src: url('/fonts/Rhuma\ Sinera\ Shadow.ttf') format('truetype');
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #D3D9A9;
+    padding: 0;
+    font-family: 'Rhuma Sinera', cursive;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 44px;
+    color: #F18324;
+    text-align: center;
+}
+
+
+/* Navegação */
+
+.navigation {
+    background-color: #0D2226;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.navigation section {
+    text-align: right;
+    margin-right: 55%;
+}
+
+.navigation img {
+    width: 50px;
+    height: 50px;
+}
+
+.navigation a {
+    color: #F18324;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin: 0 10px;
+}
+
+.navigation a:hover {
+    background-color: #fff;
+    color: #333;
+    border-radius: 3px;
+}
+
+
+/* Formulário Cadastro*/
+
+.container-cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
+
+.cadastro {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.cadastro-group {
+    margin-bottom: 15px;
+}
+
+.cadastro-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.cadastro-group input[type="text"],
+.cadastro-group input[type="email"],
+.cadastro-group input[type="password1"],
+.cadastro-group input[type="password2"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-autocomplete: off;
+    -moz-autocomplete: off;
+}
+
+.cadastro input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cadastro input[type="submit"]:hover {
+    background-color: #0D2226;
+}
+
+
+/* Formulário Login */
+
+.form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-autocomplete: off;
+    -moz-autocomplete: off;
+    accent-color: current-password;
+}
+
+.form-group input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-autocomplete: off;
+    -moz-autocomplete: off;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #0D2226;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+
+/* Rodapé */
+
+.footer {
+    background-color: #0D2226;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-note {
+    flex: 1;
+    text-align: left;
+    color: #F18324;
+}
+
+.social-icons {
+    flex: 1;
+    text-align: right;
+    margin-right: 4%;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+}

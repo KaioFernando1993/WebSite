@@ -1,0 +1,41 @@
+{% extends "base.html"%}
+
+{% block titulo%}
+<title> Cadastro </title>
+{% endblock%} 
+
+{% block conteudo%}
+
+<h1 class="log">
+    Area de Cadastro
+</h1>
+
+<div action="/cadastro" class="container-cadastro">
+    <form class="cadastro" method="POST">
+
+        
+        <div class="cadastro-group">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome">
+        </div>
+
+        <div class="cadastro-group">
+            <label for="email">Email</label>
+            <input type="email" name="email">
+        </div>
+
+        <div class="cadastro-group">
+            <label for="senha">Senha</label>
+            <input type="password1" name="password1">
+        </div>
+
+        <div class="cadastro-group">
+            <label for="confirm">Confirma senha</label>
+            <input type="password2" name="password2">
+        </div>
+
+        <input type="submit" value="Enviar">
+        <p class="urgente">{{ erro }} </p>
+    </form>
+
+{% endblock %}
