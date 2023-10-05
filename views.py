@@ -48,6 +48,7 @@ def logout():
 @app.route('/area_logada')
 def area_logada():
     return render_template('area_logada.html')
+    
 
 @app.route('/sobre')
 def sobre():

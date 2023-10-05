@@ -5,18 +5,23 @@
     {% block titulo %} {% endblock %}
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/static/style.css">
-
 </head>
 
 <body>
     <nav class="navigation">
-        <a href="/">Inicio</a>
-        <a href="/sobre">Sobre</a>
-      
-        <a href="/logout">Sair  <a>
+        <section><img src="/static/WhatsApp Image 2023-07-02 at 19.00.52.jpeg" alt="KF"></section>
+        <a href="/logout">Sair<a>
     </nav>
     <main>
-        {% block conteudo %} {% endblock %}
+        {% block conteudo %}
+        
+        <p> Bem Vindo a Nova Era! </p>
+        
+        <p> {{ nome_usuario }}  </p>
+        
+        
+        
+        {% endblock %}
     </main>
 
     <footer class="footer">
@@ -24,10 +29,10 @@
           <div class="footer-note">Site criado para estudo</div>
           <div class="social-icons">
             <a href="https://github.com/KaioFernando1993" target="_blank"><img src="/static/github.png" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/kaio-fernando-ferreira-alves-6701b2230/" target="_blank"><img src="/static/linkedin.png" alt="LinkedIn"></a>
-          </div>
+        <a href="https://www.linkedin.com/in/kaio-fernando-ferreira-alves-6701b2230/" target="_blank"><img src="/static/linkedin.png" alt="LinkedIn"></a>
         </div>
-      </footer>
+        </div>
+        </footer>
 </body>
 
 </html>

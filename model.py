@@ -3,8 +3,8 @@ import mysql.connector
 db = mysql.connector.connect(
     host='localhost',
     user='root',
-    password='Alisson.12',
-    database='dbsite'
+    password='<your password>',
+    database='<your database>'
 )
 
 def cadastrar_usuario(nome, email, senha):
@@ -23,3 +23,16 @@ def buscar_usuario(email, senha):
     usuario = cursor.fetchone()
     cursor.close()
     return usuario
+
+def buscar_nome(nome):
+    cursor = db.cursor()
+    msql = "SELECT * FROM usuario WHERE nome = %s"
+    values = (nome)
+    cursor.execute(msql, values)
+    resultado = cursor.fetchone()
+    cursor.close()
+    
+    if resultado:      
+        return resultado[0]  # Retorna o primeiro campo da consulta (nome do usuário)
+
+    return None # Retorna None se o usuário não for encontrado

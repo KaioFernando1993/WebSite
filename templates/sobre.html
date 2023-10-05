@@ -1,15 +1,14 @@
-{% extends "base.html" %}
-{% block titulo %}
-	<title>Sobre</title>
-{% endblock %}
+{% extends "base.html" %} {% block titulo %}
+<title>Sobre</title>
+{% endblock %} {% block conteudo%}
+<div class="container">
+    <div class="texto">
+        <h1>Sobre</h1>
+        <p>Sou <b>Kaio Fernando</b>, sou estudante de desenvolvimento de sistemas tenho 29 anos.</p>
+        <p>Este site foi criado em Python utilizando o framework Flask e banco de dados MySql</p>
 
-{% block conteudo%}
- <li>
-	<u></u>
-	<u></u>
-	<u></u>
-	<u></u>
-	<u></u>
-	<u></u>
- </li>
-{% endblock %}
+        <div class="imagem">
+            <img src="/website/static/imagem1.png" alt="imagem">
+        </div>
+    </div>
+    {% endblock %}
